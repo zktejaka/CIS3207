@@ -1,0 +1,79 @@
+Statistics run#1
+
+CPU
+Maximum Queue Size - 2
+Average Queue Size - 0.00
+Utilization - 8.00
+Throughput - 34
+
+DISK1
+Maximum Queue Size - 6
+Average Queue Size - 2.00
+Utilization - 0.00
+Throughput - 5
+
+DISK2
+Maximum Queue Size - 6
+Average Queue Size - 2.00
+Utilization - 0.00
+Throughput - 5
+
+NETWORK
+Maximum Queue Size - 1
+Average Queue Size - 0.00
+Utilization - 0.00
+Throughput - 1
+
+
+Statistics run#2
+
+CPU
+Maximum Queue Size - 5
+Average Queue Size - 1.00
+Utilization - 7.00
+Throughput - 38
+
+DISK1
+Maximum Queue Size - 4
+Average Queue Size - 1.00
+Utilization - 0.00
+Throughput - 8
+
+DISK2
+Maximum Queue Size - 4
+Average Queue Size - 2.00
+Utilization - 0.00
+Throughput - 5
+
+NETWORK
+Maximum Queue Size - 5
+Average Queue Size - 2.00
+Utilization - 0.00
+Throughput - 2
+
+
+Statistics run#3
+
+CPU
+Maximum Queue Size - 6
+Average Queue Size - 1.00
+Utilization - 2.00
+Throughput - 43
+
+DISK1
+Maximum Queue Size - 9
+Average Queue Size - 4.00
+Utilization - 0.00
+Throughput - 5
+
+DISK2
+Maximum Queue Size - 8
+Average Queue Size - 4.00
+Utilization - 0.00
+Throughput - 5
+
+NETWORK
+Maximum Queue Size - 2
+Average Queue Size - 0.00
+Utilization - 1.00
+Throughput - 3

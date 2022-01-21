@@ -1,0 +1,484 @@
+Log run#1
+0 - SEED
+1000 - FIN_TIME
+25 - ARRIVE_MIN
+60 - ARRIVE_MAX
+15 - CPU_MIN
+30 - CPU_MAX
+100 - DISK1_MIN
+250 - DISK1_MAX
+100 - DISK2_MIN
+250 - DISK2_MAX
+100 - NETWORK_MIN
+400 - NETWORK_MAX400 - NETWORK_MAX400 - NETWORK_MAX400 - NETWORK_MAX
+
+Job 1 enters the system at time 0
+Job 1 starts using the CPU at time 0
+Job 1 stops using the CPU at time 19
+Job 1 starts using DISK1 at time 19
+Job 2 enters the system at time 29
+Job 2 starts using the CPU at time 29
+Job 2 stops using the CPU at time 51
+Job 2 starts using the DISK2 at time 51
+Job 3 enters the system at time 57
+Job 3 starts using the CPU at time 57
+Job 3 stops using the CPU at time 86
+Job 3 leaves the system at time 86
+Job 4 enters the system at time 97
+Job 4 starts using the CPU at time 97
+Job 4 stops using the CPU at time 125
+Job 5 enters the system at time 147
+Job 5 starts using the CPU at time 147
+Job 5 stops using the CPU at time 177
+Job 6 enters the system at time 195
+Job 6 starts using the CPU at time 195
+Job 6 stops using the CPU at time 222
+Job 7 enters the system at time 225
+Job 7 starts using the CPU at time 225
+Job 7 stops using the CPU at time 249
+Job 7 leaves the system at time 249
+Job 2 stops using the DISK2 at time 251
+Job 4 starts using the DISK2 at time 251
+Job 2 starts using the CPU at time 251
+Job 1 stops using the DISK1 at time 261
+Job 6 starts using DISK1 at time 261
+Job 2 stops using the CPU at time 267
+Job 1 starts using the CPU at time 267
+Job 8 enters the system at time 270
+Job 1 stops using the CPU at time 291
+Job 8 starts using the CPU at time 291
+Job 8 stops using the CPU at time 312
+Job 9 enters the system at time 319
+Job 9 starts using the CPU at time 319
+Job 10 enters the system at time 345
+Job 9 stops using the CPU at time 349
+Job 10 starts using the CPU at time 349
+Job 10 stops using the CPU at time 367
+Job 10 leaves the system at time 367
+Job 11 enters the system at time 396
+Job 11 starts using the CPU at time 396
+Job 6 stops using the DISK1 at time 410
+Job 2 starts using DISK1 at time 410
+Job 11 stops using the CPU at time 416
+Job 6 starts using the CPU at time 416
+Job 11 leaves the system at time 416
+Job 4 stops using the DISK2 at time 432
+Job 1 starts using the DISK2 at time 432
+Job 12 enters the system at time 435
+Job 6 stops using the CPU at time 438
+Job 4 starts using the CPU at time 438
+Job 4 stops using the CPU at time 463
+Job 12 starts using the CPU at time 463
+Job 13 enters the system at time 480
+Job 12 stops using the CPU at time 493
+Job 13 starts using the CPU at time 493
+Job 12 starts using the NETWORK at time 493
+Job 13 stops using the CPU at time 512
+Job 2 stops using the DISK1 at time 513
+Job 9 starts using DISK1 at time 513
+Job 2 starts using the CPU at time 513
+Job 14 enters the system at time 531
+Job 1 stops using the DISK2 at time 539
+Job 6 starts using the DISK2 at time 539
+Job 2 stops using the CPU at time 541
+Job 14 starts using the CPU at time 541
+Job 2 leaves the system at time 541
+Job 14 stops using the CPU at time 559
+Job 1 starts using the CPU at time 559
+Job 15 enters the system at time 582
+Job 1 stops using the CPU at time 586
+Job 15 starts using the CPU at time 586
+Job 15 stops using the CPU at time 605
+Job 12 stops using the NETWORK at time 616
+Job 12 starts using the CPU at time 616
+Job 16 enters the system at time 623
+Job 12 stops using the CPU at time 635
+Job 16 starts using the CPU at time 635
+Job 12 leaves the system at time 635
+Job 16 stops using the CPU at time 663
+Job 17 enters the system at time 683
+Job 17 starts using the CPU at time 683
+Job 17 stops using the CPU at time 710
+Job 18 enters the system at time 727
+Job 18 starts using the CPU at time 727
+Job 9 stops using the DISK1 at time 728
+Job 4 starts using DISK1 at time 728
+Job 18 stops using the CPU at time 754
+Job 9 starts using the CPU at time 754
+Job 18 starts using the NETWORK at time 754
+Job 19 enters the system at time 756
+Job 6 stops using the DISK2 at time 762
+Job 14 starts using the DISK2 at time 762
+Job 9 stops using the CPU at time 781
+Job 19 starts using the CPU at time 781
+Job 19 stops using the CPU at time 809
+Job 6 starts using the CPU at time 809
+Job 20 enters the system at time 813
+Job 6 stops using the CPU at time 824
+Job 20 starts using the CPU at time 824
+Job 21 enters the system at time 841
+Job 20 stops using the CPU at time 845
+Job 21 starts using the CPU at time 845
+Job 21 stops using the CPU at time 869
+Job 22 enters the system at time 890
+Job 22 starts using the CPU at time 890
+Job 22 stops using the CPU at time 906
+Job 23 enters the system at time 917
+Job 23 starts using the CPU at time 917
+Job 23 stops using the CPU at time 936
+Job 23 leaves the system at time 936
+Job 24 enters the system at time 946
+Job 24 starts using the CPU at time 946
+Job 4 stops using the DISK1 at time 953
+Job 1 starts using DISK1 at time 953
+Job 24 stops using the CPU at time 961
+Job 4 starts using the CPU at time 961
+Job 14 stops using the DISK2 at time 973
+Job 15 starts using the DISK2 at time 973
+Job 25 enters the system at time 981
+Job 4 stops using the CPU at time 985
+Job 14 starts using the CPU at time 985
+
+Log run#2
+5 - SEED
+1000 - FIN_TIME
+25 - ARRIVE_MIN
+50 - ARRIVE_MAX
+15 - CPU_MIN
+30 - CPU_MAX
+150 - DISK1_MIN
+250 - DISK1_MAX
+100 - DISK2_MIN
+250 - DISK2_MAX
+100 - NETWORK_MIN
+350 - NETWORK_MAX
+
+Job 1 enters the system at time 0
+Job 1 starts using the CPU at time 0
+Job 1 stops using the CPU at time 18
+Job 1 starts using DISK1 at time 18
+Job 2 enters the system at time 35
+Job 2 starts using the CPU at time 35
+Job 2 stops using the CPU at time 58
+Job 2 leaves the system at time 58
+Job 3 enters the system at time 65
+Job 3 starts using the CPU at time 65
+Job 4 enters the system at time 91
+Job 3 stops using the CPU at time 91
+Job 4 starts using the CPU at time 91
+Job 3 starts using the DISK2 at time 91
+Job 4 stops using the CPU at time 111
+Job 5 enters the system at time 117
+Job 5 starts using the CPU at time 117
+Job 6 enters the system at time 142
+Job 5 stops using the CPU at time 142
+Job 6 starts using the CPU at time 142
+Job 6 stops using the CPU at time 158
+Job 7 enters the system at time 182
+Job 7 starts using the CPU at time 182
+Job 1 stops using the DISK1 at time 187
+Job 4 starts using DISK1 at time 187
+Job 7 stops using the CPU at time 204
+Job 1 starts using the CPU at time 204
+Job 7 starts using the NETWORK at time 204
+Job 8 enters the system at time 219
+Job 1 stops using the CPU at time 230
+Job 8 starts using the CPU at time 230
+Job 8 stops using the CPU at time 245
+Job 8 leaves the system at time 245
+Job 9 enters the system at time 251
+Job 9 starts using the CPU at time 251
+Job 3 stops using the DISK2 at time 266
+Job 6 starts using the DISK2 at time 266
+Job 9 stops using the CPU at time 276
+Job 3 starts using the CPU at time 276
+Job 9 leaves the system at time 276
+Job 10 enters the system at time 278
+Job 3 stops using the CPU at time 295
+Job 10 starts using the CPU at time 295
+Job 11 enters the system at time 313
+Job 10 stops using the CPU at time 319
+Job 11 starts using the CPU at time 319
+Job 10 leaves the system at time 319
+Job 11 stops using the CPU at time 338
+Job 12 enters the system at time 358
+Job 12 starts using the CPU at time 358
+Job 12 stops using the CPU at time 378
+Job 4 stops using the DISK1 at time 387
+Job 1 starts using DISK1 at time 387
+Job 4 starts using the CPU at time 387
+Job 13 enters the system at time 393
+Job 6 stops using the DISK2 at time 412
+Job 3 starts using the DISK2 at time 412
+Job 4 stops using the CPU at time 413
+Job 13 starts using the CPU at time 413
+Job 14 enters the system at time 429
+Job 13 stops using the CPU at time 438
+Job 6 starts using the CPU at time 438
+Job 13 starts using DISK1 at time 438
+Job 6 stops using the CPU at time 465
+Job 14 starts using the CPU at time 465
+Job 15 enters the system at time 478
+Job 14 stops using the CPU at time 487
+Job 15 starts using the CPU at time 487
+Job 15 stops using the CPU at time 507
+Job 16 enters the system at time 520
+Job 16 starts using the CPU at time 520
+Job 3 stops using the DISK2 at time 529
+Job 14 starts using the DISK2 at time 529
+Job 16 stops using the CPU at time 538
+Job 3 starts using the CPU at time 538
+Job 16 leaves the system at time 538
+Job 7 stops using the NETWORK at time 539
+Job 11 starts using the NETWORK at time 539
+Job 3 stops using the CPU at time 563
+Job 7 starts using the CPU at time 563
+Job 3 starts using DISK1 at time 563
+Job 17 enters the system at time 564
+Job 7 stops using the CPU at time 583
+Job 17 starts using the CPU at time 583
+Job 17 stops using the CPU at time 598
+Job 18 enters the system at time 601
+Job 18 starts using the CPU at time 601
+Job 1 stops using the DISK1 at time 610
+Job 7 starts using DISK1 at time 610
+Job 18 stops using the CPU at time 622
+Job 1 starts using the CPU at time 622
+Job 18 leaves the system at time 622
+Job 19 enters the system at time 637
+Job 1 stops using the CPU at time 645
+Job 19 starts using the CPU at time 645
+Job 13 stops using the DISK1 at time 653
+Job 17 starts using DISK1 at time 653
+Job 20 enters the system at time 669
+Job 19 stops using the CPU at time 674
+Job 13 starts using the CPU at time 674
+Job 13 stops using the CPU at time 693
+Job 20 starts using the CPU at time 693
+Job 21 enters the system at time 698
+Job 20 stops using the CPU at time 722
+Job 21 starts using the CPU at time 722
+Job 22 enters the system at time 731
+Job 21 stops using the CPU at time 749
+Job 22 starts using the CPU at time 749
+Job 3 stops using the DISK1 at time 754
+Job 1 starts using DISK1 at time 754
+Job 14 stops using the DISK2 at time 757
+Job 19 starts using the DISK2 at time 757
+Job 23 enters the system at time 772
+Job 22 stops using the CPU at time 776
+Job 3 starts using the CPU at time 776
+Job 3 stops using the CPU at time 800
+Job 14 starts using the CPU at time 800
+Job 24 enters the system at time 806
+Job 14 stops using the CPU at time 820
+Job 23 starts using the CPU at time 820
+Job 11 stops using the NETWORK at time 837
+Job 4 starts using the NETWORK at time 837
+Job 25 enters the system at time 840
+Job 23 stops using the CPU at time 850
+Job 24 starts using the CPU at time 850
+Job 7 stops using the DISK1 at time 855
+Job 13 starts using DISK1 at time 855
+Job 19 stops using the DISK2 at time 862
+Job 3 starts using the DISK2 at time 862
+Job 26 enters the system at time 869
+Job 24 stops using the CPU at time 880
+Job 11 starts using the CPU at time 880
+Job 17 stops using the DISK1 at time 902
+Job 14 starts using DISK1 at time 902
+Job 11 stops using the CPU at time 903
+Job 25 starts using the CPU at time 903
+Job 27 enters the system at time 913
+Job 25 stops using the CPU at time 929
+Job 7 starts using the CPU at time 929
+Job 1 stops using the DISK1 at time 943
+Job 23 starts using DISK1 at time 943
+Job 28 enters the system at time 949
+Job 7 stops using the CPU at time 949
+Job 19 starts using the CPU at time 949
+Job 19 stops using the CPU at time 972
+Job 26 starts using the CPU at time 972
+Job 29 enters the system at time 998
+
+
+
+
+Log run#3
+27 - SEED
+1000 - FIN_TIME
+25 - ARRIVE_MIN
+30 - ARRIVE_MAX
+15 - CPU_MIN
+30 - CPU_MAX
+150 - DISK1_MIN
+250 - DISK1_MAX
+100 - DISK2_MIN
+250 - DISK2_MAX
+100 - NETWORK_MIN
+400 - NETWORK_MAX
+
+Job 1 enters the system at time 0
+Job 1 starts using the CPU at time 0
+Job 1 stops using the CPU at time 25
+Job 1 starts using DISK1 at time 25
+Job 2 enters the system at time 29
+Job 2 starts using the CPU at time 29
+Job 2 stops using the CPU at time 44
+Job 2 starts using the DISK2 at time 44
+Job 3 enters the system at time 59
+Job 3 starts using the CPU at time 59
+Job 3 stops using the CPU at time 85
+Job 3 leaves the system at time 85
+Job 4 enters the system at time 86
+Job 4 starts using the CPU at time 86
+Job 4 stops using the CPU at time 111
+Job 5 enters the system at time 115
+Job 5 starts using the CPU at time 115
+Job 5 stops using the CPU at time 132
+Job 6 enters the system at time 140
+Job 6 starts using the CPU at time 140
+Job 6 stops using the CPU at time 158
+Job 7 enters the system at time 165
+Job 7 starts using the CPU at time 165
+Job 7 stops using the CPU at time 189
+Job 8 enters the system at time 190
+Job 8 starts using the CPU at time 190
+Job 8 stops using the CPU at time 218
+Job 9 enters the system at time 220
+Job 9 starts using the CPU at time 220
+Job 2 stops using the DISK2 at time 229
+Job 4 starts using the DISK2 at time 229
+Job 1 stops using the DISK1 at time 250
+Job 10 enters the system at time 250
+Job 9 stops using the CPU at time 250
+Job 6 starts using DISK1 at time 250
+Job 2 starts using the CPU at time 250
+Job 9 leaves the system at time 250
+Job 1 starts using the CPU at time 250
+Job 2 stops using the CPU at time 268
+Job 10 starts using the CPU at time 268
+Job 1 stops using the CPU at time 270
+Job 11 enters the system at time 279
+Job 11 starts using the CPU at time 279
+Job 10 stops using the CPU at time 291
+Job 10 leaves the system at time 291
+Job 11 stops using the CPU at time 307
+Job 12 enters the system at time 308
+Job 12 starts using the CPU at time 308
+Job 12 stops using the CPU at time 336
+Job 12 starts using the NETWORK at time 336
+Job 13 enters the system at time 337
+Job 13 starts using the CPU at time 337
+Job 13 stops using the CPU at time 359
+Job 14 enters the system at time 364
+Job 14 starts using the CPU at time 364
+Job 14 stops using the CPU at time 387
+Job 15 enters the system at time 389
+Job 15 starts using the CPU at time 389
+Job 15 stops using the CPU at time 413
+Job 16 enters the system at time 418
+Job 16 starts using the CPU at time 418
+Job 16 stops using the CPU at time 443
+Job 16 leaves the system at time 443
+Job 17 enters the system at time 444
+Job 17 starts using the CPU at time 444
+Job 12 stops using the NETWORK at time 455
+Job 14 starts using the NETWORK at time 455
+Job 4 stops using the DISK2 at time 457
+Job 8 starts using the DISK2 at time 457
+Job 17 stops using the CPU at time 470
+Job 12 starts using the CPU at time 470
+Job 18 enters the system at time 472
+Job 6 stops using the DISK1 at time 479
+Job 2 starts using DISK1 at time 479
+Job 12 stops using the CPU at time 485
+Job 4 starts using the CPU at time 485
+Job 19 enters the system at time 497
+Job 4 stops using the CPU at time 506
+Job 18 starts using the CPU at time 506
+Job 18 stops using the CPU at time 523
+Job 6 starts using the CPU at time 523
+Job 20 enters the system at time 527
+Job 6 stops using the CPU at time 545
+Job 19 starts using the CPU at time 545
+Job 21 enters the system at time 553
+Job 19 stops using the CPU at time 561
+Job 20 starts using the CPU at time 561
+Job 20 stops using the CPU at time 579
+Job 21 starts using the CPU at time 579
+Job 20 leaves the system at time 579
+Job 22 enters the system at time 582
+Job 21 stops using the CPU at time 597
+Job 22 starts using the CPU at time 597
+Job 23 enters the system at time 608
+Job 22 stops using the CPU at time 623
+Job 23 starts using the CPU at time 623
+Job 24 enters the system at time 633
+Job 23 stops using the CPU at time 652
+Job 24 starts using the CPU at time 652
+Job 2 stops using the DISK1 at time 656
+Job 1 starts using DISK1 at time 656
+Job 8 stops using the DISK2 at time 657
+Job 13 starts using the DISK2 at time 657
+Job 25 enters the system at time 661
+Job 14 stops using the NETWORK at time 671
+Job 15 starts using the NETWORK at time 671
+Job 24 stops using the CPU at time 676
+Job 2 starts using the CPU at time 676
+Job 26 enters the system at time 689
+Job 2 stops using the CPU at time 702
+Job 8 starts using the CPU at time 702
+Job 27 enters the system at time 718
+Job 8 stops using the CPU at time 721
+Job 25 starts using the CPU at time 721
+Job 8 leaves the system at time 721
+Job 25 stops using the CPU at time 738
+Job 14 starts using the CPU at time 738
+Job 28 enters the system at time 748
+Job 14 stops using the CPU at time 759
+Job 26 starts using the CPU at time 759
+Job 26 stops using the CPU at time 776
+Job 27 starts using the CPU at time 776
+Job 26 leaves the system at time 776
+Job 29 enters the system at time 777
+Job 13 stops using the DISK2 at time 792
+Job 17 starts using the DISK2 at time 792
+Job 27 stops using the CPU at time 800
+Job 28 starts using the CPU at time 800
+Job 30 enters the system at time 802
+Job 1 stops using the DISK1 at time 813
+Job 12 starts using DISK1 at time 813
+Job 28 stops using the CPU at time 827
+Job 29 starts using the CPU at time 827
+Job 28 leaves the system at time 827
+Job 31 enters the system at time 828
+Job 29 stops using the CPU at time 854
+Job 13 starts using the CPU at time 854
+Job 32 enters the system at time 858
+Job 13 stops using the CPU at time 879
+Job 30 starts using the CPU at time 879
+Job 13 leaves the system at time 879
+Job 15 stops using the NETWORK at time 884
+Job 29 starts using the NETWORK at time 884
+Job 33 enters the system at time 886
+Job 30 stops using the CPU at time 902
+Job 1 starts using the CPU at time 902
+Job 30 leaves the system at time 902
+Job 34 enters the system at time 911
+Job 17 stops using the DISK2 at time 924
+Job 18 starts using the DISK2 at time 924
+Job 1 stops using the CPU at time 925
+Job 31 starts using the CPU at time 925
+Job 35 enters the system at time 941
+Job 31 stops using the CPU at time 955
+Job 32 starts using the CPU at time 955
+Job 36 enters the system at time 971
+Job 32 stops using the CPU at time 977
+Job 15 starts using the CPU at time 977
+Job 12 stops using the DISK1 at time 996
+Job 19 starts using DISK1 at time 996
+Job 37 enters the system at time 997
+Job 15 stops using the CPU at time 997
+Job 33 starts using the CPU at time 997
+Job 15 leaves the system at time 997

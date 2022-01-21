@@ -1,0 +1,96 @@
+int main(int char *)
+~Read from command line the dictionary and/or port. If any of the former was not
+specified, use the default dictionary and default port. Then create the socket
+form the server and then the client. Bind then listen. Allow multiple clients.
+Finally loop while listening to clients, print out the OK/MISSPELLED and socket
+
+void read_dictionary(); 
+~Reads from dictionary file and stores strings in array of pointers to strings
+
+void init_locks(); 
+~Initalize locks and condition variables ahead of time all before use to make sure
+errors are minimized. Also provide if statement if the Initalization was not successful
+
+int check_dictionary(char *word); 
+~Use a binary search to check if the word is in the dictionary. Make sure to remove
+whitespace as it may lead to wrong OK/MISSPELLED. 
+
+void create_threads(); 
+~Create thread pool of worker threads, and single log thread to catalogue data. Creates 
+a #define amount of worker threads. Creates one log thread. Checking if each thread has 
+a valid ID before proceeding to create next thread.
+
+//worker threads 
+void* worker_thread(void* id); 
+~Starts with enter message for client start, loops until client disconnects. The loop will
+check the dictionary to see if the word is there, will print appropriate concatenation.
+Thread will also log information
+
+void produce_queue(int socket); 
+~Method to produce when the queue is not full. This function is only allowed to produce
+when it can obtain the appropriate locks. Will wait if the queue size is full, if another
+thread has the connection lock. Makes sure the producer thread releases the lock
+before leaving the method
+
+int consume_queue(); 
+~Methof to consume when the queue is not empty. This function is only allowed to produce 
+when it can obtain the appropriate locks. Will wait if the queue size is empty, if another
+thread has the connection lock, Makes sure the consumer thread releases the lock before 
+leaving the method
+
+void add_log(char *result); 
+~Checks to see if it can aquire the log lock to write information. Will log if it can obtain
+all locks required. Must release lock at end.
+
+char* remove_log(); 
+~Log thread consumer to print info, like the add_log()... makes sure it has all required locks
+and only consumes when queue is not empty.
+
+void* log_thread(void *arg);
+~Write to log file data stored in data_from_client.log
+
+
+//Free heap when program killed  
+void sigint_handler(int sig_num); 
+~handle the dictionary count, making sure to free the heap to resart search next loop
+
+// The main thread creates a pool of worker threads (the number of threads specified as a program parameter), and then the 
+// main thread immediately begins to behave in the following manner (to accept and 
+// distribute connection requests): 
+
+while(true){
+    connected_socket == accept(listening_socket);
+    //add connected_socket info to work buffer
+}
+
+//A second server thread will noitor a log queue and process entries by removing
+//and writting them to alog file
+
+while(true){
+    while(log_queue != EMPTY)
+    //remove an entry from the log
+    //write the entry to the log file
+}
+
+
+//WORKER THREAD
+while(true){
+    while(worker_queue != EMPTY){
+        //remove a socket data element from the connection buffer
+        //notify that there's an empty spot in the connection buffer
+        //server client
+        //close socket
+    }
+}
+//CLIENT SERVER LOGIC
+while(word != NULL){
+    //read word from the socket
+    if(word isin(dictonary.txt)) {
+        //echo the word back on the socket concatenated with "OK"
+    }
+    else{
+        //echo the word back on the socket concatenated with ""MISSPELLED"
+    }
+    //write the word, the socket response value (OK or MISSPELLED) and other
+    //log info to the log queue
+}

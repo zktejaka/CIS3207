@@ -1,0 +1,60 @@
+Report: Kat Tejada CIS 3207 Project 2
+
+Final Implementation Details:
+- void read_batch_file(char **input)
+	Works alongside the user shell loop that officially checks for the commands,
+	pipes, redirection, executes if child/parent fashion
+- int check_textf(char *input)
+	Checks to see if the argument passed ends with .txt to run in batch mode.
+	Returns true or false (0 or 1)
+- void run_textf(char *input)
+	Takes an input of a file that ends with .txt, opens it, reads it, and then
+	runs through 1 command at a time
+- void get_user_input(char *input, char *args[MAX_ARGS])
+	Uses strtok to accept one token at a time and get the arguments
+- void run_commands(char *input[MAX_ARGS])
+	Checks if the command is a built in one, if so it will run it
+- int check_for_redirection (char **args)
+	Checks for redirection commands (<, >, >>) If found, the appropriate tag
+	(input_redit, output_redir, append_redir) is set to TRUE. The function also
+	returns a number 1,2,or 3 that indicated input, putput, or append
+- void redirection(char **input)
+	Replaces standard output files with the redirected file upon request. Then
+	it passes the arguments to run_commands. Uses dup2() to label file descriptors
+	and track the status of each file being opened/written to
+- void check_backend(char *input[MAX_ARGS])
+	Loops through the passed arguments look for the & symbol to execute commands
+	appropriately. amp_redir is set to true and will be checked later for exec
+- void exec_ext(char **input)
+	Forks, the child runs through the exec() then exits, parent waits for child
+	and then finishes
+- char *print_prompter()
+	Calls getcwd() to get user info to print nicely to the terminal to show that
+	myshell.c is running
+- char *get_curr_dir()
+	Just gets the current directory
+
+Built In Commands: 
+~ cd: Changes current directory, must be specified
+~ clr: Clears the terminal
+~ dir: Shows a list of the files in the current directory
+~ echo: Prints out a specified string to the screen
+~ enviro: Prints out the current environment variables
+~ quit: Exits the shell
+~ pause: Pauses shell until user continues (Enter Key)
+
+
+Main Function
+	Knows when to go into batch mode vs user mode to execute commands
+
+
+
+PROBLEMS
+~ In batch mode only one command at a time is allowed, my program does not loop 
+continously until the end of file or the quit command is used
+~ My quit command has an Abort Segmentation Fault. I believe this is due to me freeing
+an input twice, through backtracking I can not figure out how to fix it. My quit command
+did work before. 
+~ & sometimes works, in check_for_redirection() the proper checks for multiple commands
+are not reliable. Depending on the commands it sometimes works
+~ User mode pipes have some problems, my logic seems to be sound but the code does not run

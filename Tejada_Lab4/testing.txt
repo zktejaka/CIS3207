@@ -1,0 +1,22 @@
+To test that the processes are being created and sent to the correct functions, 
+I added print statements to show the pid in handler/reporter/and generator mode. 
+3 generators, 4 handlers and 1 reporter were made.
+
+To test the generators sending signals randomly, I had multiple 30 second runs where the generator processes went through a loop.
+They printed their PID and the signal that they were sending. A total count for the signals sent was printed and reported in the log.
+
+Another test I ran showed the time the generators took between iterations of the loop. (aka sleep_random_interval()). 
+They all fell in the correct range of .01s to .1s
+
+To test that the handlers are only handling one signal, I added a print statement which printed the PID and the signal that is being handled. 
+I saw that 2 processes are printing SIGUSR1 and 2 processes are printing SIGUSR2.
+
+My thread function (signalingThreads.c) did not work out as planned as it did not run properly. With the amount of time left to complete
+this project I did not getting it functioning properly. I did re-use and copy a lot of my methods from the multi-processing
+file but was to no avail. The only log printed out is...
+
+
+SIGUSR1 avg time: 0.000000 seconds
+SIGUSR2 avg time: 0.000000 seconds
+
+I believe there is some issues with the creation of the thread and how they execute in a particular order
